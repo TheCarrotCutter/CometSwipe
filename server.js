@@ -1,4 +1,5 @@
 const http = require('http');
 const ws = require('ws');
 
-const wss = new ws.Server();
+const PORT = process.env.PORT || 3000; // Render will set process.env.PORT
+const wss = new WebSocket.Server({ port: PORT });

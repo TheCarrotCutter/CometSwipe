@@ -1,0 +1,9 @@
+<script>
+    let socket = new WebSocket("https://cometswipe.onrender.com");
+
+    socket.onopen = function(e) {
+        alert("[open] Connection established");
+        socket.send("test");
+    };
+
+</script>

@@ -7,3 +7,7 @@ const wss = new WebSocket.Server({ port: PORT });
 wss.on('connection', ws => {
   console.log('Client connected');
 });
+
+socket.onmessage = function(event) {
+  socket.send(event.data+1);
+};

@@ -9,5 +9,6 @@ wss.on('connection', ws => {
 });
 
 WebSocket.onmessage = function(event) {
+  console.log(event.data);
   WebSocket.send(event.data);
 };

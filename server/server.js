@@ -8,7 +8,8 @@ wss.on('connection', ws => {
   console.log('Client connected');
 
     ws.on('message', function incoming(message) {
-    console.log(message.toString());
-    ws.send(message); // Echoes the received message back to the client
+    let text = message.toString();
+    console.log(text);
+    ws.send(text); // Echoes the received message back to the client
   });
 });

@@ -8,6 +8,6 @@ wss.on('connection', ws => {
   console.log('Client connected');
 });
 
-socket.onmessage = function(event) {
-  socket.send(event.data);
+WebSocket.onmessage = function(event) {
+  WebSocket.send(event.data);
 };

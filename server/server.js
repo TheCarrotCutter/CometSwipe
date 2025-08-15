@@ -9,5 +9,5 @@ wss.on('connection', ws => {
 });
 
 socket.onmessage = function(event) {
-  socket.send(event.data+1);
+  socket.send(event.data);
 };

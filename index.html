@@ -8,18 +8,19 @@
 <h1>Title</h1>
 
 
-    <script>
-    let socket = new WebSocket("wss://cometswipe.onrender.com");
+<script>
+    
+let socket = new WebSocket("wss://cometswipe.onrender.com");
 
-    socket.onopen = function(e) {
-        alert("[open] Connection established");
-        socket.send("test");
-    };
+socket.onopen = function(e) {
+    alert("[open] Connection established");
+    socket.send("test");
+};
 
-
-    </script>
+</script>
     
 </body>
 </html>
+
 
 

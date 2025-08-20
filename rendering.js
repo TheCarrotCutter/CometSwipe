@@ -9,7 +9,7 @@ if (gameObjects) {
         const obj = gameObjects[i];
         if (obj.type === 'circle') {
             graphics.beginFill(0xffffff);
-            graphics.drawCircle(0, 0, obj.radius);
+            graphics.drawCircle(obj.x, obj.y, obj.radius);
             graphics.endFill();
         };
     };

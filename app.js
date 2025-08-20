@@ -16,5 +16,5 @@ export const app = new PIXI.Application({
 document.body.appendChild(app.view);
 
 export let gameObjects = [
-    {type:'circle', radius:10}
+    {type:'circle', x:300, y:300, radius:10}
 ];

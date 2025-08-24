@@ -1,0 +1,15 @@
+to start node server: 
+
+cd C:\Users\mason\Downloads\CometSwipe-superTest\CometSwipe-superTest\server
+node server.js
+
+if the server is being hosted localy:
+
+set the server ip to ws://localhost:3000
+
+if the server is being hosted on render:
+
+set the server ip to wss://cometswipe.onrender.com
+
+
+

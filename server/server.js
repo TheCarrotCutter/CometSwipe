@@ -20,8 +20,8 @@ wss.on('connection', socket => {
     let text = JSON.parse(message);
 
     let player = clients[playerID];
-    player.x += text.x || 300; // 300 is the starting position
-    player.y += text.y || 300;
+    player.x += text.x || 0; // 0 is the starting position
+    player.y += text.y || 0;
 
     socket.send(JSON.stringify({
       playerID: playerID,

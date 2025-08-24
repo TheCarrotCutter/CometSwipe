@@ -31,7 +31,7 @@ function update() {
     requestAnimationFrame(update);
 }
 
-let socket = new WebSocket("ws://localhost:3000"); // wss://cometswipe.onrender.com
+let socket = new WebSocket("wss://cometswipe.onrender.com");
 // or ws://localhost:3000
 
 socket.onopen = function(e) {
@@ -65,5 +65,6 @@ socket.onmessage = function(event) {
 export let entities = [
     {type:'circle', x:300, y:300, radius:10, color:'#1068dbff'},
 ];
+
 
 update();

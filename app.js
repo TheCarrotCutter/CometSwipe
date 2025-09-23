@@ -31,7 +31,7 @@ function update() {
     requestAnimationFrame(update);
 }
 
-let socket = new WebSocket("// wss://cometswipe.onrender.com"); // wss://cometswipe.onrender.com
+let socket = new WebSocket("wss://cometswipe.onrender.com"); // wss://cometswipe.onrender.com
 // or ws://localhost:3000
 
 socket.onopen = function(event) {
@@ -82,3 +82,4 @@ export let particles = [];
 
 
 update();
+
